@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ola</title>
+</head>
+<body>
+<h4> como voce se chama?</h4>
+<input id="nome"  type="text" placeholder="seu nome"  >
+<button onclick="boasVinda()">pronto</button>
+<div id="mensagem" ></div>
+
+
+<script>
+    function boasVinda(){
+
+        let input = document.querySelector("#nome");
+        let div = document.querySelector("#mensagem")
+        div.innerHTML +=`<h1> seja bem-vindo(a) ${input.value}</h1>`;
+        input.value = "";
+        input.focus = true;
+        // ou input.focus ()
+    }
+    
+        //  declaraçao de uma função 
+    //  function boasVinda (){
+    //     document.write(`<h1> seja bem-vindo(a) ${input.value}  </h1>`);
+    //  }
+
+    //  execução de uma função 
+    // boasVinda("pedro");
+
+    // faz a tentativa de um trecho de codigo
+    // try{
+    //      boasVinda("anna");
+    //      boasVinda("camila");
+
+    //  }
+// // caso ocorra um erro no try, cai aqui
+//      catch (error){
+//         console.log(erro)
+
+//      }
+
+
+
+</script>
+    
+</body>
+</html>
