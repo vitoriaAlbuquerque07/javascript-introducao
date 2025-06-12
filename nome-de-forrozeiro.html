@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra quem é voçe no forró</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="h-screen flex justify-center items-center  bg-[url('https://as1.ftcdn.net/v2/jpg/02/70/80/88/1000_F_270808850_7RSkMJxQvbB6i4LCV9AvhIOoC1AF2Noz.jpg')]  bg-cover bg-center absolut    " >
+    
+  
+
+    <div class="  w-[500px] bg-white rounded-xl p-4 shadow-[15px_20px_18px_rgba(31,41,50,1.0)] z-10 ">
+    <h1 class="text-2xl font-semibold text-center italic text-gray-700 mb-8">Descubra seu nome de Forrozeiro</h1>
+    <div class="flex   ">
+        <div class="flex-1 translate-x-6   ">
+            <label class="font-bold text-gray-800 tracking-wider uppercase "  for="">»Dia do aniversário</label> <br>
+            <select size="5"  class="outline rounded pl-3 outline-none border border-gray-500 translate-x-16 "  name="dia" id="dia">
+                <option value="marcão">1</option>
+                <option value="wesley">2</option>
+                <option value="jailson">3</option>
+                <option value="gordin">4</option>
+                <option  value="zé banguelo">5</option>
+                <option value="bruninho">6</option>
+                <option value="cleiton">7</option>
+                <option value="tonny">8</option>
+                <option value="duduzinho"> 9</option>
+                <option value="pedrão">10</option>
+                <option value="chico beiço">11</option>
+                <option value="manuelson">12</option>
+                <option value="cabeludo">13</option>
+                <option value="toinho">14</option>
+                <option value="fabão">15</option>
+                <option value="galego">16</option>
+                <option value="mago">17</option>
+                <option value="mané catinga">18</option>
+                <option value="tripinha">19</option>
+                <option value="valtinho">20</option>
+                <option value="valcley">21</option>
+                <option value="vaginaldo">22</option>
+                <option value="juninho">23</option>
+                <option value="angolano">24</option>
+                <option value="xandinho">25</option>
+                <option value="zézin">26</option>
+                <option value="gilvanei">27</option>
+                <option value="vavá">28</option>
+                <option value="laerte">29</option>
+                <option value="janaildo">30</option>
+                <option value="douglinhas">31</option>
+              
+
+
+            </select>
+        </div>
+        <div class="flex-2 ">
+            <label class=" text-gray-800 font-bold tracking-wider uppercase"> »Mês do aniversário</label> <br>
+            <select size="5" name="mes" id="mes"  class="outline rounded pl-3 outline-none border border-gray-500 ">
+                
+             
+                <option value="dos teclados">Janeiro</option>
+                <option value="pegador">Fevereiro</option>
+                <option value="pipocado">Março</option>
+                <option value="milionario">Abril</option>
+                <option value="das pisadas">Maio</option>
+                <option value="danadão">Junior</option>
+                <option value="estouradão">Julho</option>
+                <option value="taradão">Agosto</option>
+                <option value="das meninas">Setembro</option>
+                <option value="solteirão">Outubro</option>
+                <option value="descarado">Novembro</option>
+                <option value="do arrocha">Dezembro</option>
+
+                
+            </select>
+        </div>
+    </div>
+   
+   
+    <br>
+    <button onclick="mostrarFrase()"   class=" bg-gray-800 text-white px-4 py-2 hover:scale-110 transition-transform duration-500 transition-shadow  cursor-pointer  border rounded absolut  translate-x-1/2">seu nome de Forrozeiro é...</button>
+
+    <p class="border uppercase text-center relative top-3 font-semibold"  id="resultado"></p>
+
+    
+
+    <script>
+      
+          function mostrarFrase() {
+        let dia = document.querySelector("#dia").value;
+        let mes = document.querySelector("#mes").value;
+        let Juntando = dia + "  " + mes ;
+        let frase = dia + "  " + mes;
+        document.querySelector("#resultado").textContent = frase;
+    }
+ 
+    </script>
+</body>
+</html>
